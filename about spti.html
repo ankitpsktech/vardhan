@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+    <style>
+        #vish {
+            float: right;
+            margin-top: 30px;
+            margin-left: 30px;
+            font-family: algerian;
+        }
+         .nav-link{
+            color: black;
+         }
+        #mayu {
+            background-color: rgb(129, 235, 235);
+            width: 1150px;
+            height: 250px;
+            margin-left: 90px;
+            margin-bottom: 70px;
+            text-align: center;
+        }
+
+        .section1 {
+            margin: 20px;
+            width:400px;
+            height: 400px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            box-sizing: border-box;
+            font-family: Calibri;
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: 20px;
+            background-color:whitesmoke;
+        }
+
+        #section2 {
+            margin: 20px;
+            width: 900px;
+            height: 400px;
+            margin-left: 250px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            box-sizing: border-box;
+            font-family:  Calibri;
+            border-radius: 12px;
+            padding: 20px;
+            background-color: rgb(225, 228, 231);
+
+        }
+
+        #vihan {
+            margin: 20px;
+            width: 700px;
+            height: 500px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            font-family:  Calibri;
+            text-align: left;
+            padding: 20px;
+        }
+        #vihan1 {
+            margin: 20px;
+            width: 500px;
+            height: 500px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            box-sizing: border-box;
+            font-family:  Calibri;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: #07146F;
+            padding: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            width: 200px;
+            height: 50px;
+            border: solid 2px;
+        }
+
+        .dropdown {
+            position: relative;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 60px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(78, 78, 192);
+        }
+
+
+        footer {
+            margin-top: 15px;
+            height: 500px;
+        }
+
+        .foot-panel1 {
+            background-color: white;
+            color: white;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .foot-panel2 {
+            background-color: rgb(245, 241, 241);
+            color: black;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            border: solid 2px;
+            line-height: 10px;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        ul a {
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: #dddddd;
+        }
+
+        .foot-panel3 {
+            background-color: rgb(245, 241, 241);
+            color: black;
+            /* border-top: 0.5px solid white; */
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            font-family: algerian;
+
+        }
+        .ok li a:hover{
+          color:black;
+        }
+        .ankit2{
+            height: 70%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .mammi{
+            float: left;
+        }
+        @media screen and (max-width: 800px) {
+                       
+                       body{
+                         margin: 0px;
+                         padding: 0px;
+                       }
+                       .gunu{
+                         display: none;
+                       }
+                       .mobhead{
+                        background-color: rgb(178, 169, 169);
+                       }
+                      
+                   }
+ 
+         
+     </style>
+ </head>
+ <body> 
+  <div class="gunu">
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+        <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo1.jpg" style="margin-left: 130px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 450px;">
+        <ul class="navbar-nav ok">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about us.html">About us</a></li>
+              <li><a class="dropdown-item" href="about sez.html">About sez</a></li>
+              <li><a class="dropdown-item" href="about spti.html">About STPI Scheme</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu ok">
+              <li><a class="dropdown-item" href="sez approval.html">SEZ Approval Services</a></li>
+              <li><a class="dropdown-item" href="SEZ managment .html">SEZ Management & Operational Services</a></li>
+              <li><a class="dropdown-item" href="sez online.html">SEZ Online Services</a></li>
+          <li><a class="dropdown-item" href="other services.html">Other Services</a></li>
+              <li><a class="dropdown-item" href="it ites.html">
+                Services for IT/ITeS Units in Maharashtra</a></li>
+              <li><a class="dropdown-item" href="ifsc service.html">IFSC Services</a></li>
+              <li><a class="dropdown-item" href="warehousing.html">Warehousing & Distribution</a></li>
+              <li><a class="dropdown-item" href="transpotation services.html">Transportation</a></li>
+              <li><a class="dropdown-item" href="international frient.html">International Freight Management</a></li>
+              <li><a class="dropdown-item" href="custom clearnce .html">Custom Clearance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="career .html">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li> 
+          <li class="nav-item">
+            <div class="container"> <a class="nav-link" href="contact.html">
+                <button type="button" class="btn btn-primary btn-md">Contact</button></a>
+              </div>
+          </li>  
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="mobhead">
+    <nav class="navbar navbar-expand-sm" style="font-size: 17px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo1.jpg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about us.html">About us</a></li>
+                <li><a class="dropdown-item" href="about sez.html">About sez</a></li>
+                <li><a class="dropdown-item" href="about spti.html">About STPI Scheme</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="sez approval.html">SEZ Approval Services</a></li>
+                <li><a class="dropdown-item" href="SEZ managment .html">SEZ Management & Operational Services</a></li>
+                <li><a class="dropdown-item" href="sez online.html">SEZ Online Services</a></li>
+            <li><a class="dropdown-item" href="other services.html">Other Services</a></li>
+                <li><a class="dropdown-item" href="it ites.html">
+                  Services for IT/ITeS Units in Maharashtra</a></li>
+                <li><a class="dropdown-item" href="ifsc service.html">IFSC Services</a></li>
+                <li><a class="dropdown-item" href="warehousing.html">Warehousing & Distribution</a></li>
+                <li><a class="dropdown-item" href="transpotation services.html">Transportation</a></li>
+                <li><a class="dropdown-item" href="international frient.html">International Freight Management</a></li>
+                <li><a class="dropdown-item" href="custom clearnce .html">Custom Clearance</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="career .html">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li> 
+            <li class="nav-item">
+              <div class="container"> <a class="nav-link" href="contact.html">
+                  <button type="button" class="btn btn-primary btn-md">Contact</button></a>
+                </div>
+            </li>  
+          </ul>
+        </div>
+      </div>
+    </nav>
+     </div>
+   <div class="ankit2" style="background-image: url(images/park\ of\ india.png);width: 100%;height: 300px;"></div><br>
+   <br>
+   <div style="text-align: center;font-size: 30px;">STPI ​ SCHEME
+</div>
+   <div><p style="text-align: justify;">In the emerging global economy, Information Technology is the largest, fastest growing and most profitable industry across the globe. Identifying IT as the future for India and its vast potential, the Government announced a software policy in the year 1986 making “Software, Exports, Development & Training” as a major thrust area for which the Government formulated the STP Scheme covering aspects like simplifications and rationalization of procedures. The Government of India established and registered STPI as an Autonomous Society under the Department of Electronics (Now Ministry of Information Technology) on 5th June 1991 with an objective to implement the STP Scheme, set-up and manage infrastructural facilities and provide other services including professional training.
+
+    The Software Technology Park Scheme (under The Ministry of Communication and Information Technology, Govt. of India) is a 100% Export Oriented Scheme for undertaking Software Development/IT enabled services for Export using Data Communication links or in the form of physical exports including export of professional services for rendering consultancy services and development of software.
+    
+    STP/EHTP Scheme:
+    To promote exports from the country, Govt. of India, Ministry of Commerce & Industry promulgated EXIM Policy (EXIM Import Policy) / Foreign Trade Policy (1/9/2004).
+    To promote software and electronic hardware exports STPI was setup in 1991, having HQs in New Delhi.
+    STPI is a Non-Profit Organization.
+    The STP/EHTP Scheme in the EXIM / FTP Policy is deployed by STP centers set up across India.
+    To facilitate High Speed Data Transfer from the exporters/100% EoUs, Satellite Earth Station were set up under Data Communication Services.
+
+
+</p></div>
+   <div class="container mt-3">
+    <br>
+    <!-- Nav pills -->
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="pill" href="#home">Scheme Benefits & Highlights:</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu1" style="width: 300px;"><center>Post approval processes:</center></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu2">Imports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu3" style="width: 200px;"><center>Re-Exports</center></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu4" style="width: 200px;"><center>Other Information</center></a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+        <p style="text-align: justify;">100% customs duty exemption on imports of capital equipment’s
+            Equipment can also be imported on loan or lease basis
+            All relevant equipment/goods including second hand equipment can be imported (except prohibited items)
+            100% excise duty exemption on indigenous items procurement
+            Green card enabling priority treatment for government clearances / other services
+            100% Foreign Direct Investment permissible through 'Automatic Route' of RBI
+            Sales in the DTA (Domestic Tariff Area) up to 50% of the foreign exchange earned by the STP/EHTP unit
+            100% Depreciation on capital goods over a period of five years
+            Software units may also use the computer system for training purpose (including commercial training).</p>
+      </div>
+      <div id="menu1" class="container tab-pane fade"><br>
+        <p style="text-align: justify;">After obtaining Letter of Permission (LoP),
+            The approved STP unit is required to execute Legal Agreement (LA) / Legal Undertaking (LuT) with STPI on an Rs. 500/- stamp paper (Indian Non-Judicial Paper)
+            To obtain:
+            
+            List Attestation w.r.t proposed CG procurement (Import & Indigenous)
+            Registration Cum Membership Certificate (RCMC)
+            Green Card (proof / identity card as 100% EoU status) With the LOP, LUT, List Attestation, Green Card and other approvals accorded by STPI, STP/EHTP units are required to approach customs authorities for bonding of the premise & execution of Bank Guarantee.
+             </p>
+      </div>
+      <div id="menu2" class="container tab-pane fade"><br>
+        <p style="text-align: justify;">STP/ EHTP units are free to import all capital goods those required for creating STP infrastructure unless otherwise the same are in the prohibited list. These goods may be imported as per clause 6.2(a) of Foreign Trade Policy and 6.6.1 & 6.6.7 of the Foreign Trade Policy Hand Book of Procedures and customs notification 52/2003 dated 31/3/2003. Benefit: Customs duty exemption
+
+            Types of Import:
+            
+            Outright Purchase
+            Loan basis from client / supplier / parent company Loan period to be indicated
+            Free of cost from client / supplier / parent company
+            Lease basis (clause 6.4 of FTP & clause 6.9 of HoP of FTP) Lease agreement to be filed
+            Bond – Bond sale Proof of EoU to be filed
+            High Sea Sale High sea sale agreement to be filed
+            Second Hand Capital goods (clause 6.3 of FTP & 6.6.1(b) of HoP of FTP ) Chartered Engineers certificate to be filed
+            Procedure: 
+            
+            A request letter accompanied with Annexure IX and the Proforma Invoice to STPI.
+            Import approval issued by STPI
+            Approach customs for necessary clearance of Goods
+            Bonding of Imported capital Goods
+            
+            Obtain Import Approval from STPI
+            Clear imported capital goods from customs, obtain BoE
+            Enter the details of the capital goods procured in the bond register, duly maintained.
+            Separate bond register to be maintained in case of STP /EHTP units operating from multiple locations.
+            Request mail to STPI bonding officer for inspection
+            STPI Bonding officer will inspect the imported capital goods against the import approval issued by STPI, BoE, Packing list etc.,
+            The Bonding Officer will endorse the Bond Register and will issue re-warehousing certificate
+            Submit Re-warehousing Certificate (RWC) to customs authorities within 7 days</p>
+      </div>
+      <div id="menu3" class="container tab-pane fade"><br>
+        <p style="text-align: justify;">STP units are allowed to Re-Export the capital goods which are imported, as per clause 6.17.of Foreign Trade Policy and 6.28.1 6.28.2 of Hand book of procedures, with the permission of the STPI & Customs
+
+            Types of Re-Export
+            
+            Case 1 : Re-Export of Capital Goods for Replacement
+            
+            Case 2 : Re-Export of Capital Goods imported on Loan basis
+            
+            Case 3 : Re-Export of Capital for Repair & Return
+            
+            Case 4 : Re -Export of surplus or obsolete Capital Goods to the supplier / client / parent company. (as per clause 6.15(a) and 6.15(b) of FTP
+            
+            Procedure:
+            
+            A request letter accompanied with Annexure VI- the
+            Re-export invoice & Annexure VI-A to STPI with necessary enclosures Re-Export approval issued by STPI
+            Approach customs for necessary clearance of Goods
+            Shifting of Imported Goods
+            
+            STP Units are permitted to Shift Imported Capital Goods as per clause 6.13 of the Foreign Trade Policy. · 
+            
+            Shifting / Transfer of Equipment’s - Permanent or Temporary
+            
+            One location to other location of the same STP/EHTP unit
+            One STP/EHTP/EoU unit to other STP/EHTP/EoU unit in the same jurisdiction (viz Bangalore)
+            One STP/EHTP/EoU unit to other STP/EHTP/EoU unit in the different jurisdiction (viz Bangalore & Mumbai)
+             </p>
+      </div>
+      <div id="menu4" class="container tab-pane fade"><br>
+        <p style="text-align: justify;">Types /Reasons of Shifting / Inter Unit Transfer 
+            Shifting for Repair
+            Shifting for Demonstration/Execution of Project/Training / testing / calibration
+            Shifting for Sub-Contracting
+            Shifting in case of Change/Expansion of Location of STP Operations – within the unit’s additional premise / change in premise.
+            Inter Unit transfer (100% to 100% EoU) Permanently
+             
+            
+            Debonding of Capital and Indigenous Goods
+            STP /EHTP units are allowed to De-bond the unused capital goods which are imported or procured duty free on payment of applicable customs / central excise duties with the permission of STPI & Customs Authorities.
+            
+            Procedure:
+            
+            A request letter accompanied with necessary enclosures
+            NoC for De-bonding of CG issued by STPI
+            Approach customs for necessary clearance of Goods
+            Space Expansion or Additional Premises
+            
+            STP / EHTP units may expand their operations in their existing license by obtaining Space Expansion / additional location approval within the same premise or anywhere within the same STPI jurisdiction as per clause 6.34 of Foreign Trade Policy -Hand Book of Procedures.
+            
+            Procedure:
+            
+            A request letter accompanied with necessary enclosures
+            Floor plan with dimension details (Sq mts)
+            Lease Agreement copy
+            Copy of municipal tax paid challan
+            Existing customs license
+            Space expansion approval issued by STPI Approach customs for necessary clearance and updation in the PBWHL
+            
+            Debonding of Premises
+            
+            STP / EHTP units may De-bond their premise either partially or fully.
+            
+            Procedure:
+            
+            A request letter stating the reason and necessary enclosures
+            Dimension details of the area being de-bonded
+            Declaration stating that there are no bonded items (either Imports or CT3 goods)
+            De-bonding of premise approval will be issued by STPI
+            
+            Approach customs for necessary clearance and updation in the PBWHL
+            
+             
+            
+            De-bonding of Capital Goods
+            
+            STP / EHTP units are allowed to de-bond Imported/CT3 Capital Goods by payment of applicable customs duty as per Foreign Trade Policy Hand Book of Procedures with permission of STPI & Customs authorities
+            
+             
+            
+            Destruction or Scrapping of Goods
+            
+            STP / EHTP units are allowed to destroy or Scrap the obsolete Imported /CT3 Capital Goods without payment of customs duty as per clause 6.34 of Foreign Trade Policy Hand Book of Procedures with permission of STPI & Customs authorities
+            
+             
+            
+            Subcontracting
+            
+            STP / EHTP units are allowed to sub-contract part of their export job to other STP / DTA unit for better utilization of resources as per clause 6.14 of Foreign Trade Policy and clause 6.21.1 of Foreign Trade Policy –Hand Book of Procedures.
+            
+            Procedure:
+            
+            A request letter for Sub-contracting approval with Annexure XX and necessary enclosures
+            
+            Purchase Order copies / Agreement copy for the sub-contract.
+            
+            Percentage of the sub-contract.
+            
+            Disclaimer certificate as to who will be availing the export benefits
+            
+            NOC for sub-contracting will be issued by STPI
+            
+            Approach customs for necessary clearances
+             </p>
+      </div>
+    </div>
+  </div>
+    <div class="row" style="margin-top: 100px;background-color: #dddddd;">
+        <div class="col-lg-4">
+            <ul>
+                <h2 style="color: red;">
+                    <p>OUR SERVICES</p>
+                </h2>
+                <a>
+                    <h6 style="color: black;">SEZ Approval Services</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">SEZ Management & Operational Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">SEZ Online Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Other Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Services for IT/ITeS Units in Maharashtra</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">IFSC Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Warehousing & Distribution</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Transportation</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">International Freight Management</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">SPTI Consultancy & Liaison</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Custom Clearance</h6>
+                </a>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <p>
+                <h2 style="color: red;">OUR LINKS</h2>
+                </p>
+                <a>
+                    <h6 style="color:black;">Home</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">About Sez</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">About Us</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">Career</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">Blog</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">Contact Us</h6>
+                </a>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <p>
+                <h2 style="color: red;">CONTACT</h2>
+                </p>
+                <a>
+                    <h6 style="color:black;"><img src="images/address-removebg-preview.png" width="40px" height="40px">
+                        Niketan1, Flat. 6, Anand Nagar,<br><br> Old Sangvi Pune – 411027</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;"><img src="images/contact-removebg-preview.png" width="40px"
+                            height="40px">9967549923</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;"><img src="images/email-removebg-preview.png" width="35px"
+                            height="35px">mahendrau@vardhansez.com</h6>
+                </a>
+
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin: top 100px;background-color: #dddddd;">
+        <center><b>Copyright © 2023 vardhansez</b></center>
+    </div>
+
+</body>
+</html>
+      

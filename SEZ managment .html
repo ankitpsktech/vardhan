@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+    <style>
+        #vish {
+            float: right;
+            margin-top: 30px;
+            margin-left: 30px;
+            font-family: algerian;
+        }
+          .nav-link{
+            color: black
+            
+            ;
+          }
+        #mayu {
+            background-color: rgb(129, 235, 235);
+            width: 1150px;
+            height: 250px;
+            margin-left: 90px;
+            margin-bottom: 70px;
+            text-align: center;
+        }
+
+        .section1 {
+            margin: 20px;
+            width:400px;
+            height: 400px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            box-sizing: border-box;
+            font-family: Calibri;
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: 20px;
+            background-color:whitesmoke;
+        }
+
+        #section2 {
+            margin: 20px;
+            width: 900px;
+            height: 400px;
+            margin-left: 250px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            box-sizing: border-box;
+            font-family:  Calibri;
+            border-radius: 12px;
+            padding: 20px;
+            background-color: rgb(225, 228, 231);
+
+        }
+
+        #vihan {
+            margin: 20px;
+            width: 700px;
+            height: 500px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            font-family:  Calibri;
+            text-align: left;
+            padding: 20px;
+        }
+        #vihan1 {
+            margin: 20px;
+            width: 500px;
+            height: 500px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            box-sizing: border-box;
+            font-family:  Calibri;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: #07146F;
+            padding: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            width: 200px;
+            height: 50px;
+            border: solid 2px;
+        }
+
+        .dropdown {
+            position: relative;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 60px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(78, 78, 192);
+        }
+
+
+        footer {
+            margin-top: 15px;
+            height: 500px;
+        }
+
+        .foot-panel1 {
+            background-color: white;
+            color: white;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .foot-panel2 {
+            background-color: rgb(245, 241, 241);
+            color: black;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            border: solid 2px;
+            line-height: 10px;
+        }
+        .ok li a:hover{
+          color:black;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        ul a {
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: #dddddd;
+        }
+
+        .foot-panel3 {
+            background-color: rgb(245, 241, 241);
+            color: black;
+            /* border-top: 0.5px solid white; */
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            font-family: algerian;
+
+        }
+        .ankit2{
+            height: 70%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .tanu{
+          width: 730px;
+        }
+        @media screen and (max-width: 800px) {
+                       
+                       body{
+                         margin: 0px;
+                         padding: 0px;
+                       }
+                       .gunu{
+                         display: none;
+                       }
+                       .mobhead{
+                        background-color: rgb(178, 169, 169);
+                       }
+                       .tanu{
+                        width: 100%;
+                       }
+                      
+                   }
+ 
+         
+     </style>
+ </head>
+ <body> 
+  <div class="gunu">
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+        <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo1.jpg" style="margin-left: 130px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 450px;">
+        <ul class="navbar-nav ok">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about us.html">About us</a></li>
+              <li><a class="dropdown-item" href="about sez.html">About sez</a></li>
+              <li><a class="dropdown-item" href="about spti.html">About STPI Scheme</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu ok">
+              <li><a class="dropdown-item" href="sez approval.html">SEZ Approval Services</a></li>
+              <li><a class="dropdown-item" href="SEZ managment .html">SEZ Management & Operational Services</a></li>
+              <li><a class="dropdown-item" href="sez online.html">SEZ Online Services</a></li>
+          <li><a class="dropdown-item" href="other services.html">Other Services</a></li>
+              <li><a class="dropdown-item" href="it ites.html">
+                Services for IT/ITeS Units in Maharashtra</a></li>
+              <li><a class="dropdown-item" href="ifsc service.html">IFSC Services</a></li>
+              <li><a class="dropdown-item" href="warehousing.html">Warehousing & Distribution</a></li>
+              <li><a class="dropdown-item" href="transpotation services.html">Transportation</a></li>
+              <li><a class="dropdown-item" href="international frient.html">International Freight Management</a></li>
+              <li><a class="dropdown-item" href="custom clearnce .html">Custom Clearance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="career .html">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li> 
+          <li class="nav-item">
+            <div class="container"> <a class="nav-link" href="contact.html">
+                <button type="button" class="btn btn-primary btn-md">Contact</button></a>
+              </div>
+          </li>  
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="mobhead">
+    <nav class="navbar navbar-expand-sm" style="font-size: 17px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo1.jpg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about us.html">About us</a></li>
+                <li><a class="dropdown-item" href="about sez.html">About sez</a></li>
+                <li><a class="dropdown-item" href="about spti.html">About STPI Scheme</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="sez approval.html">SEZ Approval Services</a></li>
+                <li><a class="dropdown-item" href="SEZ managment .html">SEZ Management & Operational Services</a></li>
+                <li><a class="dropdown-item" href="sez online.html">SEZ Online Services</a></li>
+            <li><a class="dropdown-item" href="other services.html">Other Services</a></li>
+                <li><a class="dropdown-item" href="it ites.html">
+                  Services for IT/ITeS Units in Maharashtra</a></li>
+                <li><a class="dropdown-item" href="ifsc service.html">IFSC Services</a></li>
+                <li><a class="dropdown-item" href="warehousing.html">Warehousing & Distribution</a></li>
+                <li><a class="dropdown-item" href="transpotation services.html">Transportation</a></li>
+                <li><a class="dropdown-item" href="international frient.html">International Freight Management</a></li>
+                <li><a class="dropdown-item" href="custom clearnce .html">Custom Clearance</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="career .html">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li> 
+            <li class="nav-item">
+              <div class="container"> <a class="nav-link" href="contact.html">
+                  <button type="button" class="btn btn-primary btn-md">Contact</button></a>
+                </div>
+            </li>  
+          </ul>
+        </div>
+      </div>
+    </nav>
+     </div>
+   <div class="ankit2" style="background-image: url(images/sez\ management.jpg);width: 100%;height: 300px;"></div>
+   <div class="container mt-3">
+    <br>
+    <div class="row" style="text-align: justify;">
+        <div class="col-lg-4">
+            <h1>OUR SERVICES</h1>
+            <p>
+                SEZ Approval Services<br>
+                SEZ Management & Operational Services<br>
+                SEZ Online Services<br>
+                Other Services<br>
+                Services for IT/ITeS Units in Maharashtra<br>
+                IFSC Services<br>
+                Warehousing & Distribution<br>
+                Transportation<br>
+                International Freight Management<br>
+                STPI Consultancy & Liaison<br>
+                Custom Clearance<br>
+                </p>
+        </div>
+        <div class="col-lg-8">
+            <h2>SEZ MANAGEMENT & OPERATIONAL SERVICES
+            </h2><br>
+ <!-- Nav pills -->
+ <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item tanu">
+      <a class="nav-link active" data-bs-toggle="pill" href="#home"><center>OUR SERVICES</center></a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <p>Material clearance services under ARE-1, Bill of entry, Bill of export
+        Export clearance by filing shipping bill of export
+        DTA sale clearance service
+        Scrap and wastage removal
+        Temporary removal permissions under Rule 50 & 51 of SEZ Rules 2006
+        Compliances management and record keeping on a day to day basis
+        Softex preparation and submissions through SEZ Online
+        APR preparation and submission through SEZ Online
+        Periodic reports preparation assistance like MPR, QPR, HPR, Six Monthly material utilization reports.</p>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    <div class="row" style="margin-top: 100px;background-color: #dddddd;">
+        <div class="col-lg-4">
+            <ul>
+                <h2 style="color: red;">
+                    <p>OUR SERVICES</p>
+                </h2>
+                <a>
+                    <h6 style="color: black;">SEZ Approval Services</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">SEZ Management & Operational Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">SEZ Online Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Other Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Services for IT/ITeS Units in Maharashtra</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">IFSC Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Warehousing & Distribution</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Transportation</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">International Freight Management</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">SPTI Consultancy & Liaison</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Custom Clearance</h6>
+                </a>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <p>
+                <h2 style="color: red;">OUR LINKS</h2>
+                </p>
+                <a>
+                    <h6 style="color:black;">Home</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">About Sez</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">About Us</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">Career</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">Blog</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">Contact Us</h6>
+                </a>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <p>
+                <h2 style="color: red;">CONTACT</h2>
+                </p>
+                <a>
+                    <h6 style="color:black;"><img src="images/address-removebg-preview.png" width="40px" height="40px">
+                        Niketan1, Flat. 6, Anand Nagar,<br><br> Old Sangvi Pune – 411027</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;"><img src="images/contact-removebg-preview.png" width="40px"
+                            height="40px">9967549923</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;"><img src="images/email-removebg-preview.png" width="35px"
+                            height="35px">mahendrau@vardhansez.com</h6>
+                </a>
+
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin: top 100px;background-color: #dddddd;">
+        <center><b>Copyright © 2023 vardhansez</b></center>
+    </div>
+
+</body>
+</html>
+      

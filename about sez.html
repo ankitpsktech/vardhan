@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+    <style>
+        #vish {
+            float: right;
+            margin-top: 30px;
+            margin-left: 30px;
+            font-family: algerian;
+        }
+           .nav-link{
+            color: black;
+           }
+        #mayu {
+            background-color: rgb(129, 235, 235);
+            width: 1150px;
+            height: 250px;
+            margin-left: 90px;
+            margin-bottom: 70px;
+            text-align: center;
+        }
+
+        .section1 {
+            margin: 20px;
+            width:400px;
+            height: 400px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            box-sizing: border-box;
+            font-family: Calibri;
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: 20px;
+            background-color:whitesmoke;
+        }
+
+        #section2 {
+            margin: 20px;
+            width: 900px;
+            height: 400px;
+            margin-left: 250px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            box-sizing: border-box;
+            font-family:  Calibri;
+            border-radius: 12px;
+            padding: 20px;
+            background-color: rgb(225, 228, 231);
+
+        }
+
+        #vihan {
+            margin: 20px;
+            width: 700px;
+            height: 500px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            font-family:  Calibri;
+            text-align: left;
+            padding: 20px;
+        }
+        #vihan1 {
+            margin: 20px;
+            width: 500px;
+            height: 500px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            align-content: center;
+            box-sizing: border-box;
+            font-family:  Calibri;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: #07146F;
+            padding: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            width: 200px;
+            height: 50px;
+            border: solid 2px;
+        }
+
+        .dropdown {
+            position: relative;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 60px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(78, 78, 192);
+        }
+
+
+        footer {
+            margin-top: 15px;
+            height: 500px;
+        }
+
+        .foot-panel1 {
+            background-color: white;
+            color: white;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .foot-panel2 {
+            background-color: rgb(245, 241, 241);
+            color: black;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            border: solid 2px;
+            line-height: 10px;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        ul a {
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: #dddddd;
+        }
+
+        .foot-panel3 {
+            background-color: rgb(245, 241, 241);
+            color: black;
+            /* border-top: 0.5px solid white; */
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            font-family: algerian;
+
+        }
+        .ok li a:hover{
+          color:black;
+        }
+        .ankit2{
+            height: 70%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        @media screen and (max-width: 800px) {
+                       
+                       body{
+                         margin: 0px;
+                         padding: 0px;
+                       }
+                       .gunu{
+                         display: none;
+                       }
+                       .mobhead{
+                        background-color: rgb(178, 169, 169);
+                       }
+                      
+                   }
+ 
+         
+     </style>
+ </head>
+ <body> 
+  <div class="gunu">
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+        <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo1.jpg" style="margin-left: 130px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 450px;">
+        <ul class="navbar-nav ok">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about us.html">About us</a></li>
+              <li><a class="dropdown-item" href="about sez.html">About sez</a></li>
+              <li><a class="dropdown-item" href="about spti.html">About STPI Scheme</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu ok">
+              <li><a class="dropdown-item" href="sez approval.html">SEZ Approval Services</a></li>
+              <li><a class="dropdown-item" href="SEZ managment .html">SEZ Management & Operational Services</a></li>
+              <li><a class="dropdown-item" href="sez online.html">SEZ Online Services</a></li>
+          <li><a class="dropdown-item" href="other services.html">Other Services</a></li>
+              <li><a class="dropdown-item" href="it ites.html">
+                Services for IT/ITeS Units in Maharashtra</a></li>
+              <li><a class="dropdown-item" href="ifsc service.html">IFSC Services</a></li>
+              <li><a class="dropdown-item" href="warehousing.html">Warehousing & Distribution</a></li>
+              <li><a class="dropdown-item" href="transpotation services.html">Transportation</a></li>
+              <li><a class="dropdown-item" href="international frient.html">International Freight Management</a></li>
+              <li><a class="dropdown-item" href="custom clearnce .html">Custom Clearance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="career .html">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li> 
+          <li class="nav-item">
+            <div class="container"> <a class="nav-link" href="contact.html">
+                <button type="button" class="btn btn-primary btn-md">Contact</button></a>
+              </div>
+          </li>  
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="mobhead">
+    <nav class="navbar navbar-expand-sm" style="font-size: 17px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo1.jpg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about us.html">About us</a></li>
+                <li><a class="dropdown-item" href="about sez.html">About sez</a></li>
+                <li><a class="dropdown-item" href="about spti.html">About STPI Scheme</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="sez approval.html">SEZ Approval Services</a></li>
+                <li><a class="dropdown-item" href="SEZ managment .html">SEZ Management & Operational Services</a></li>
+                <li><a class="dropdown-item" href="sez online.html">SEZ Online Services</a></li>
+            <li><a class="dropdown-item" href="other services.html">Other Services</a></li>
+                <li><a class="dropdown-item" href="it ites.html">
+                  Services for IT/ITeS Units in Maharashtra</a></li>
+                <li><a class="dropdown-item" href="ifsc service.html">IFSC Services</a></li>
+                <li><a class="dropdown-item" href="warehousing.html">Warehousing & Distribution</a></li>
+                <li><a class="dropdown-item" href="transpotation services.html">Transportation</a></li>
+                <li><a class="dropdown-item" href="international frient.html">International Freight Management</a></li>
+                <li><a class="dropdown-item" href="custom clearnce .html">Custom Clearance</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="career .html">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li> 
+            <li class="nav-item">
+              <div class="container"> <a class="nav-link" href="contact.html">
+                  <button type="button" class="btn btn-primary btn-md">Contact</button></a>
+                </div>
+            </li>  
+          </ul>
+        </div>
+      </div>
+    </nav>
+     </div>
+   <div class="ankit2" style="background-image: url(images/about\ sez.jpg);width: 100%;height: 300px;"></div>
+   <div class="container mt-3">
+    <br>
+    <!-- Nav pills -->
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="pill" href="#home" style="width: 300px;"><center>Overview of sez</center></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu1" style="width: 350px;"><center>Stakeholders of sez's</center></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu2" style="width: 400px;"><center>Incentives and facilities offered to the SEZs</center></a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+        <p style="text-align: justify;">SEZ is a specially designated duty free enclave deemed to be a foreign territory for the purpose of trade operations, duties and tariffs.
+            A Special Economic Zone (SEZ) is a geographical region that has economic laws more liberal than rest of the country’s general economic laws.
+            SEZ Act and Rules were framed to attract foreign investments into India, encourage exports from India to bring in more and more foreign exchange into India.
+            All Goods and services supplied from Domestic Tariff Area (DTA) to SEZ are treated as deemed exports and all Goods and services supplied by SEZ units to Domestic Tariff Area (DTA) are treated as imports into India and subject to all procedures and rules applicable in case of normal imports into India.
+            SEZ’s are deemed to be a airport, port, Land Custom stations, and Inland container depot under the Customs Act.
+            SEZ Developers/Co-developers/Units are entitled for various fiscal/Non Fiscal incentives and benefits as per SEZ Act and Rules
+            Manufacturing, Servicing, trading, re-conditioning, repair etc are allowed in the SEZ’s.
+            SEZ policy was introduced in year 2000 under Export Import Policy, However SEZ Act was enacted in 2005 and passed by Parliament and rules was framed in 2006.</p>
+      </div>
+      <div id="menu1" class="container tab-pane fade"><br>
+        <p style="text-align: justify;">Major Services SEZ can provide<br>
+
+            Fund-raising services for individuals, corporations and governments
+            Asset management and global portfolio diversification undertaken by pension funds, insurance companies and mutual funds.
+            Wealth management.
+            Global tax management and cross-border tax liability optimization, which provides a business opportunity for financial intermediaries, accountants and law firms.
+            Global and regional corporate treasury management operations that involve fund-raising, liquidity investment and management and asset-liability matching
+            Risk management operations such as insurance and reinsurance.
+            Merger and acquisition activities among trans-national corporations
+             </p>
+      </div>
+      <div id="menu2" class="container tab-pane fade"><br>
+        <p style="text-align: justify;">The incentives and facilities offered to the units in SEZs for attracting investments into the SEZs, including foreign investment include:-<br>
+
+            Duty free import/domestic procurement of goods for development, operation and maintenance of SEZ units
+            100% Income Tax exemption on export income for SEZ units under Section 10AA of the Income Tax Act for first 5 years, 50% for next 5 years thereafter and 50% of the ploughed back export profit for next 5 years.
+            Exemption from minimum alternate tax under section 115JB of the Income Tax Act.
+            External commercial borrowing by SEZ units upto US $ 500 million in a year without any maturity restriction through recognized banking channels.
+            Exemption from Central Sales Tax.
+            Exemption from Service Tax.
+            Single window clearance for Central and State level approvals.
+            Exemption from State sales tax and other levies as extended by the respective State Governments.  
+            The major incentives and facilities available to SEZ developers include:-<br>
+            
+            Exemption from customs/excise duties for development of SEZs for authorized operations approved by the BOA.
+            Income Tax exemption on income derived from the business of development of the SEZ in a block of 10 years in 15 years under Section 80-IAB of the Income Tax Act.
+            Exemption from minimum alternate tax under Section 115 JB of the Income Tax Act.
+            Exemption from dividend distribution tax under Section 115O of the Income Tax Act.
+            Exemption from Central Sales Tax (CST).
+            Exemption from Service Tax (Section 7, 26 and Second Schedule of the SEZ Act).</p>
+      </div>
+    </div>
+  </div>
+    <div class="row" style="margin-top: 100px;background-color: #dddddd;">
+        <div class="col-lg-4">
+            <ul>
+                <h2 style="color: red;">
+                    <p>OUR SERVICES</p>
+                </h2>
+                <a>
+                    <h6 style="color: black;">SEZ Approval Services</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">SEZ Management & Operational Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">SEZ Online Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Other Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Services for IT/ITeS Units in Maharashtra</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">IFSC Services</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Warehousing & Distribution</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Transportation</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">International Freight Management</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">SPTI Consultancy & Liaison</h6>
+                </a>
+                <a>
+                    <h6 style="color: black;">Custom Clearance</h6>
+                </a>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <p>
+                <h2 style="color: red;">OUR LINKS</h2>
+                </p>
+                <a>
+                    <h6 style="color:black;">Home</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">About Sez</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">About Us</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">Career</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">Blog</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;">Contact Us</h6>
+                </a>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <ul>
+                <p>
+                <h2 style="color: red;">CONTACT</h2>
+                </p>
+                <a>
+                    <h6 style="color:black;"><img src="images/address-removebg-preview.png" width="40px" height="40px">
+                        Niketan1, Flat. 6, Anand Nagar,<br><br> Old Sangvi Pune – 411027</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;"><img src="images/contact-removebg-preview.png" width="40px"
+                            height="40px">9967549923</h6>
+                </a>
+                <a>
+                    <h6 style="color:black;"><img src="images/email-removebg-preview.png" width="35px"
+                            height="35px">mahendrau@vardhansez.com</h6>
+                </a>
+
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin: top 100px;background-color: #dddddd;">
+        <center><b>Copyright © 2023 vardhansez</b></center>
+    </div>
+
+</body>
+</html>
+      
